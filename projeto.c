@@ -8,9 +8,13 @@ int sub(int a, int b){
 	in sub_num = a - b;
 	return sub_num;
 }
-
+int multi(int a, int b){
+	in smulti_num = a * b;
+	return multi_num;
+}
 int main(){
 	printf("Soma dos dois números: %d\n", soma(5,5));
-		printf("Soma dos dois números: %d\n", sub(5,5));
+	printf("Soma dos dois números: %d\n", sub(5,5));
+	printf("Soma dos dois números: %d\n", multi(5,5));
 	return 0;
 	}
