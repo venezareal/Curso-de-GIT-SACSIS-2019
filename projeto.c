@@ -1,20 +1,26 @@
 #include <stdio.h>
 
 int soma(int a, int b){
-	in soma_num = a + b;
+	int soma_num = a + b;
 	return soma_num;
 }
 int sub(int a, int b){
-	in sub_num = a - b;
+	int sub_num = a - b;
 	return sub_num;
 }
 int multi(int a, int b){
-	in multi_num = a * b;
+	int multi_num = a * b;
 	return multi_num;
 }
 int div(int a, int b){
-	in div_num = a / b;
-	return div_num;
+	if(b-a){
+		printf("Não pode dividir");
+		return div_num;
+	}
+	else{
+		int div_num = a / b;
+		return div_num;
+	}
 }
 int main(){
 	printf("Soma dos dois números: %d\n", soma(5,5));
